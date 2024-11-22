@@ -16,6 +16,7 @@
   "dependencies": {
     "@guolao/vue-monaco-editor": "^1.5.4",
     "@primevue/themes": "^4.2.2",
+    "@webcontainer/api": "^1.5.1",
     "@xterm/addon-fit": "^0.10.0",
     "@xterm/xterm": "^5.5.0",
     "pinia": "^2.2.6",

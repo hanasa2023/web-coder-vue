@@ -21,7 +21,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div :class="`w-full`">
+  <div class="w-full">
     <div ref="terminal"></div>
   </div>
 </template>

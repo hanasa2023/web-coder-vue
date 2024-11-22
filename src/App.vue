@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import ISideBar from '@/components/ISideBar.vue'
 import Xterm from '@/components/Xterm.vue'
-import { RouterView } from 'vue-router'
 import { ref } from 'vue'
+import { RouterView } from 'vue-router'
 
 const items = ref([
   {
@@ -18,8 +18,8 @@ const items = ref([
 
 <template>
   <div class="h-screen">
-    <Menubar :model="items"></Menubar>
-    <div class="flex h-[calc(100vh-102px)]">
+    <Menubar id="menubar" :model="items"></Menubar>
+    <div :class="`flex h-[calc(100vh-50px)]`">
       <ISideBar></ISideBar>
       <div class="flex flex-col items-end h-full w-full">
         <RouterView />
