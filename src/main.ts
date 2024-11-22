@@ -13,6 +13,12 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(PrimeVue, {
   theme: {},
+  options: {
+    cssLayer: {
+        name: 'primevue',
+        order: 'tailwind-base, primevue, tailwind-utilities'
+    }
+  }
 })
 app.use(router)
 
