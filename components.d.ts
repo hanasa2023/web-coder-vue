@@ -27,5 +27,6 @@ declare module 'vue' {
     Terminal: typeof import('./src/components/Terminal.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
+    Xterm: typeof import('./src/components/Xterm.vue')['default']
   }
 }
