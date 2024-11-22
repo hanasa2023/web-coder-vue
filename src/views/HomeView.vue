@@ -3,7 +3,7 @@ import MonacoEditor from '@/components/MonacoEditor.vue'
 </script>
 
 <template>
-  <main class="h-full w-full">
+  <main class="flex-grow w-full">
     <MonacoEditor />
   </main>
 </template>
