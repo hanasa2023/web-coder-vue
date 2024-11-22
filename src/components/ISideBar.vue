@@ -21,7 +21,7 @@ const bottomTools = ref([
 </script>
 
 <template>
-  <div class="flex h-[calc(100vh-102px)]">
+  <div class="flex">
     <div class="flex flex-col w-12 items-center justify-between h-full bg-pink-700">
       <div class="flex flex-col items-center">
         <Button v-for="tool in tools" :icon="tool.icon" variant="text" rounded />
