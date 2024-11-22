@@ -1,9 +1,26 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
+import ISideBar from '@/components/ISideBar.vue'
+import MonacoEditor from '@/components/MonacoEditor.vue'
+import { ref } from 'vue'
+
+const items = ref([
+  {
+    label: 'Home',
+    icon: 'pi pi-home',
+  },
+  {
+    label: 'Feature',
+    icon: 'pi pi-star',
+  },
+])
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
-  </main>
+  <Menubar :model="items"></Menubar>
+  <div class="flex">
+    <ISideBar></ISideBar>
+    <main class="w-full">
+      <MonacoEditor />
+    </main>
+  </div>
 </template>
